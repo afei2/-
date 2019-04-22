@@ -108,6 +108,9 @@ a * { *cursor: pointer }
 	.headert h6 a {
 		color: #fff;
 	}
+	.headert  h5 {
+		display: none;
+	}
 	.headert p {
 		float: right;
 		font-size: 30px;
@@ -195,7 +198,6 @@ a * { *cursor: pointer }
 		width: 990px;
 		height: 180px;
 		border: solid 1px #ffffff;
-		color: #fff;
 		background: #e18543;
 		font-size: 72px;
 		text-align: center;
@@ -205,6 +207,11 @@ a * { *cursor: pointer }
 		left: 465px;
 		z-index: 99;
 		opacity: 0.8;
+	}
+	.main_2 h6 a {
+		display: block;
+		color: #fff;
+		
 	}
 	.main_2 ul {
 		position: absolute;
@@ -263,6 +270,7 @@ a * { *cursor: pointer }
 		color: #666;
 		line-height: 24px; 
 	}
+
 	.l3 p{
 		margin: 0 56px 0 46px;
 		font-size: 16px;
@@ -341,6 +349,7 @@ a * { *cursor: pointer }
 	.main_5{
 		background-color: #ecf2f2;
 		position: relative;
+		width: 100%;
 	}
 	.main_5 h6{
 		width: 340px;
@@ -456,6 +465,10 @@ a * { *cursor: pointer }
 	.swiper_1 {
 		height: 100%;
 		width: 100%;
+	}
+	.banner a{
+		display: block;
+		height: 600px;
 	}
 	.main_6 {
 		background: #eaf3f1;
@@ -937,9 +950,50 @@ a * { *cursor: pointer }
 	.main_11 ol li a{
 		color: #666666;
 	}
+	.footer{
+		position: relative;
+	}
+	.qrcode {
+		position: absolute;
+		top: -430px;
+		right: 0;
+		display: none;
+	}
+	.main_b ol li:last-child input {
+		width:250px;
+	}
+	.age {
+		margin-right:26px;
+		float:left;
+	}
+	.l4 {
+		margin-right:10px;
+	}
 }
 
  
+@media screen and (min-width: 960px) and (max-width: 1570px) { 
+	.headert ul{
+		margin-left: 0;
+	}
+	.headert h6 {
+		float: left;
+	}
+	.headert p {
+		float: left;
+	}
+ }
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1000px) {
@@ -954,8 +1008,18 @@ a * { *cursor: pointer }
 		text-transform:uppercase;
 		margin-top: 0;
 	}
+	.com_h5 {
+	   	font-size: 0.213333rem;
+	   	color: #666;
+	   	margin-left: 2.5%;
+	   	padding: 0.266667rem 0;
+    }
+   .com_h5 a{
+	   	color: #666;
+	}
 	.headert h1{
 		float: left;
+		/*margin-left: 0.333333rem;*/
 	}
    .headert h1 img{
    		width: 2.426667rem;
@@ -963,28 +1027,67 @@ a * { *cursor: pointer }
    .headert ul{
    		display: none;
    }
-   .headert {
-
-   }
    .headert h6{
-		background: url(../img/wechatbg.jpg);
-		background-size: 100%;
-		width: 1.586667rem;
-		height: 0.44rem;
-		line-height: 0.44rem;
-		float: left;
-		text-indent: 0.613333rem;
-		font-size: 0.226667rem;
-		margin-top: 0.453333rem;
+		display: none;
 	}
-	.headert h6 a {
-		color: #fff;
-	}
-   .headert p {
+   .headert h5 a{
 		float: right;
+		margin: 0.333333rem;
+		display: block;
+		z-index: 5;
+		background: #fff;
+   }
+   .headert h5 a img {
+   		width: 0.586667rem;
+   }
+   .mulu {
+        width: 100%;
+        height: 100%;
+        background: #9e9e9e;
+        position: fixed;
+        z-index: 10000;
+        display: none;
+        top: 0;
+    }
+
+    .mulu ol {
+        width: 90%;
+        height: 65%;
+        text-align: center;
+        margin: auto 10%;
+        padding-left: 0;
+    }
+
+    .mu_img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mu_img img {
+        width: 8rem !important;
+        display: inline-block;
+    }
+
+    .mulu ol li {
+        width: 70%;
+       	margin: 0 auto;
+    }
+	.mulu ol li a {
+        width: 100%;
+        margin-top: 1rem;
+        color: #333;
+        padding-top: 0.05rem;
+        margin-bottom: 0.3rem;
+        line-height: 0.5rem;
+        font-size: 0.1rem;
+        
+    }
+	.headert p {
 		font-size: 0.4rem;
 		color: #ff6d00;
-		margin-top: 0.453333rem;
+		padding-top: 0.453333rem;
+		float: left;
+		display: none;
 	}
 	.headert p  img {
 		width: 0.4rem;
@@ -1000,8 +1103,7 @@ a * { *cursor: pointer }
    }
    .main_1 {
    		width: 100%;
-   		background: url(../img/bg01.jpg);
-   		background-size: 100%;
+   		background: #ecf2f2;
    }
    .main_1 h3{
 		padding: 0.4rem 0 0.746667rem 0;
@@ -1013,6 +1115,7 @@ a * { *cursor: pointer }
    }
    .main_1 ul li{
    	margin-right: 0;
+   	margin: 1rem 0;
    }
    .main_1 ul li p {
    		font-size: 0.4rem;
@@ -1036,13 +1139,47 @@ a * { *cursor: pointer }
 		margin-top: 0.266667rem;
 		margin-bottom:0.4rem;
    }
-   .main_2 h6 {
+
+   .main_2{
+		position: relative;
+	}
+	.main_2 h6{
+		width: 70%;
+		height: 1.2rem;
+		border: solid 1px #ffffff;
+		
+		background: #e18543;
+		font-size: 0.32rem;
+		text-align: center;
+		line-height: 1.2rem;
+		position: absolute;
+		top: 1.2rem;
+		left: 15%;
+		z-index: 99;
+		opacity: 0.8;
+	}
+	.main_2 h6 a {
+		color: #fff;
+		display: block;
+	}
+   .main_2 ul {
    	display: none;
    }
-   .main_2 img {
+   .main_2 ol {
+   	margin: 5% 0;
+   }
+   .main_2 ol li {
+   	width: 50%;
+   	float: left;
+   }
+   .main_2 ol li img{
    		width: 90%;
    		margin: 0 auto;
-   		display: block;   }
+   		display: block;   
+   	}
+   .main_3 ul li {
+   	margin-top: 0.3rem;
+   }
    .main_3 img{
 		width: 90%;
    		margin: 0 auto;
@@ -1062,14 +1199,17 @@ a * { *cursor: pointer }
    		font-size: 0.213333rem;
    		color: #666;
    		margin: 0 0.266667rem;
-   		line-height: 0.32rem;
+   		line-height: 0.52rem;
+   }
+   .l2p {
+   		display: none;
    }
    .l1 p {
 		font-size: 0.213333rem;
 		color: #666666;
 		text-align: center;
 		margin-top:0.4rem;
-		line-height: 0.32rem;
+		line-height: 0.42rem;
    }
    .l1 p em{
 		display: block;
@@ -1080,13 +1220,16 @@ a * { *cursor: pointer }
 	margin-left: 0.613333rem;
 	font-size: 0.213333rem;
 	color: #666666;
-	margin-top:0.133333rem;
+	margin-top:0.2rem;
    }
    .main_4 h3 {
-   	margin-top: 0.533333rem;
+   	margin-top: 1rem;
    }
    .main_4 em{
    	display: none;
+   }
+   .main_4 ul li {
+   	margin-top: 0.7rem;
    }
    .main_4 ul li img {
    	width: 100%;
@@ -1105,9 +1248,28 @@ a * { *cursor: pointer }
    	margin: 0 0.2rem;
    	line-height: 0.48rem;
    }
-   .main_5 h6 {
-   	display: none;
+   .main_5 {
+   	position: relative;
    }
+   .main_5 h6{
+		width: 70%;
+		height: 1.333333rem;
+		background-color: #e67019;
+		border-radius: 50px;
+		opacity: 0.75;
+		font-size: 0.64rem;
+		line-height: 1.333333rem;
+		text-align: center;
+		position: absolute;
+		top: 1.35rem;
+		left: 15%;
+		z-index: 999;
+	}
+	.main_5 h6 a{
+		color: #ffffff;
+		display: block;
+		
+	}
    .main_5 div {
    	width: 100%;
    	height: 4.0rem;
@@ -1122,18 +1284,22 @@ a * { *cursor: pointer }
    
    	text-align: center;
    }
+   .footer h1 img {
+   		width: 30%;
+   }
    .footer_d {
-   	margin-left: 0.4rem;
-   	float: left;
+   	margin: 0 auto;
+   	width: 53%;
+   	margin-top: 0.4rem;
    }
    .footer_d img{
    	float: left;
    	margin-right: 0.213333rem;
+   	width: 0.666667rem;
    }
    .footer_d p{
    	font-size: 0.213333rem;
    	color: #eeeeee;
-   	padding-top: 0.2rem;
    	float: left;
    }
    .footer_d p b{
@@ -1141,8 +1307,10 @@ a * { *cursor: pointer }
    	display: block;
    }
    .footer_r {
-   	margin-left: 0.266667rem;
-   	float: left;
+   	margin: 0 auto;
+   	width: 30%;
+   	margin-top: 0.4rem;
+   	position: relative;
    }
    footer h2 {
    	font-size: 0.213333rem;
@@ -1150,11 +1318,293 @@ a * { *cursor: pointer }
    	text-align: center;
    	background: #3c8b4a;
 	border-top: 1px solid #eeeeee;
-	padding-top: 0.066667rem;
+	padding: 0.066667rem 0;
 	margin-top: 0.133333rem;
    }
    footer h2 a{
    	color: #eee;
+   }
+    .wechat,.qq{
+		width: 0.693333rem;
+	}
+	.wechat {
+		margin-right: 0.3rem;
+	}
+	.qrcode {
+   	width: 3rem;
+   	position: absolute;
+   	top: -3.2rem;
+   	left: -0.4rem;
+   	display: none;
+   }
+   .main_8 h5 {
+   	font-size: 0.213333rem;
+   	color: #666;
+   	margin-left: 2.5%;
+   	padding: 0.266667rem 0;
+   }
+   .main_8 h5 a{
+   	color: #666;
+   }
+   .main_8 ul{
+		display: none;
+   }
+   .qywh {
+   		margin:0 2.5%;
+   		font-size: 0.24rem;
+   		margin-bottom: 0.3rem;
+   }
+   .qywh img {
+   		width: 100%;
+   }
+   .qywh h6{
+		color: #333;
+		margin: 0.2rem 0;
+   }
+   .qywh i {
+   	color: #666;
+   }
+   .main_8 .content{
+   		margin: 2.5%;
+   }
+   .main_8 .content b img{
+		width: 100%;
+   }
+   .main_8 .content h6 {
+   	font-size: 0.24rem;
+   	color: #333;
+   	margin: 0.2rem 0; 
+   }
+   .main_8 .content p {
+   	font-size: 0.24rem;
+   	color: #666;
+   	margin: 0.1rem;
+   	line-height: 0.373333rem;
+   }
+   .main_8 .content ol {
+   	margin-top: 0.666667rem;
+   }
+   .main_8 .content ol li img{
+	width: 100%;
+   }
+   .main_7 ul{
+   		margin:0 2.5%;
+   }
+   .main_7 ul li img {
+   		width: 100%;
+   }
+   .main_7 ul li h6 {
+		font-size: 0.266667rem;
+		color: #e46100;
+		margin: 0.266667rem 0;
+   }
+   .main_7 ul li p{
+   		font-size: 0.186667rem;
+   		color: #777777;
+   		line-height: 0.32rem;
+   		padding: 0.133333rem 0;
+   		border-top: 1px solid #e0dfdf;
+   }
+   .main_9 ul {
+   		display: none;
+   }
+   .main_9 .w1200{
+		margin: 0 2.5%;
+   }
+   .main_9 .w1200 h6 {
+   		text-align: center;
+   		font-size: 0.24rem;
+   		color: #333333;
+   		line-height: 0.373333rem;
+   }
+   .main_9 .w1200 em ul{
+   		display: block;
+
+   }
+   .main_9 .w1200 em ul li {
+		text-align: center;
+		margin: 0.266667rem 0;
+   }
+   .main_9 .w1200 em ul li img {
+		width: 1.093333rem;
+   }
+   .main_9 .w1200 em ul li p{
+   		font-size: 0.24rem;
+   		color:#333;
+   }
+   .main_9 .w1200 b img {
+   		width: 100%;
+   		margin: 0.4rem 0;
+   }
+   .map {
+   		height: 4.0rem;
+   		width: 100%;
+   }
+   .main_11 ul{
+		display: none;
+   }
+   .main_11 .content img{
+   		width: 100%;
+   }
+   .main_11 .content h6{
+   		width: 2.0rem;
+   		height: 0.533333rem;
+   		background-color: #ffffff;
+		border-radius: 5px;
+		border: solid 1px #e46100;
+		line-height: 0.533333rem;
+		text-align: center;
+		margin: 0.266667rem auto;
+   }
+   .main_11 .content h6 a{
+   		color: #e46100;
+   }
+   .main_11 ol {
+   	margin: 0 2.5%;
+   }
+   .main_11 ol li {
+   		font-size: 0.213333rem;
+   		margin: 0.133333rem 0;
+   }
+   .main_11 ol li a{
+		color: #666666;
+   }
+   .main_10 ul {
+   		display: none;
+   }
+   .news {
+   		margin:0 2.5%;
+   }
+   .news ol li img{
+		width: 100%;
+   }
+   .news ol li h6 {
+   		font-size: 0.24rem;
+   		color: #333333;
+		margin: 0.133333rem 0;
+   }
+   .news ol li h6 i {
+   		font-size: 0.213333rem;
+   		color: #999999;
+   		float: right;
+   }
+   .news ol li p {
+   		font-size: 0.186667rem;
+   		color: #666666;
+   		line-height: 0.373333rem;
+   }
+   .news ol li em a {
+		display: block;
+		width: 1.733333rem;
+		height: 0.4rem;
+		background-color: #cccccc;
+		line-height: 0.4rem;
+		text-align: center;
+		color: #fff;
+		margin: 0.266667rem auto;
+   }
+   .main_b h6{
+   		font-size: 0.24rem;
+   		color: #333333;
+   }
+   .main_b h6 i{
+   		padding-bottom: 0.22rem;
+   		border-bottom: 0.026667rem solid #e46100;
+   }
+   .main_b div{
+   		margin-top: 0.666667rem;
+   }
+   .main_b ol {
+   		width: 100%;
+   }
+   .main_b div ol li {
+   		width: 100%;
+   		margin: 0.133333rem 0; 
+   }
+   .main_b div ol li input{
+		width: 99%;
+		line-height: 0.666667rem;
+		font-size: 0.213333rem;
+		color: #999999;
+		text-indent: 0.32rem;
+   }
+   .main_b ol li:last-child input {
+   		width: 48%;
+   }
+   .main_b ol li .weight {
+   		float: right;
+   }
+   .main_b ol li textarea {
+   		width: 93%;
+   		height: 2.666667rem;
+   		padding: 0.24rem;
+   }
+   .main_b ol li a {
+   		display: block;
+   		width: 100%;
+   		line-height: 0.666667rem;
+		background-color: #e46100;
+		border-radius: 3px;
+		text-align: center;
+		color: #fff;
+		font-size: 0.24rem;
+   }
+   .main_6 ol{
+		width: 100%;
+   }
+   .main_6 ol li {
+   		width: 42%;
+   		height: 1.4rem;
+   		float: left;
+   		background-color: #e8f5f1;
+   		text-align: center;
+   		margin:  auto 4%;
+   }
+   .main_6 ol li img{
+		width: 0.186667rem;
+		padding: 0.2rem 0 0.173333rem 0;
+   }
+   .main_6 ol li p {
+   		color: #333333;
+   		font-size: 0.266667rem;
+   }
+   .main_6 ol li.open{
+		background: #e46100;
+   }
+   .main_6 ol li.open a p{
+		color: #fff;
+   }
+   .main_6 ul {
+   		margin: 0 2.5%;
+   		text-align: center;
+   }
+   .main_6 ul li {
+   		 margin: 0.266667rem 0;
+   }
+   .main_6 ul li img {
+   		width: 100%;
+   }
+   .main_6 ul li h6 {
+   		font-size: 0.24rem;
+   		color: #333333;
+   		margin: 0.32rem auto;
+   }
+   .main_6 ul li p {
+   		font-size: 0.213333rem;
+   		color: #888888;
+   		border-bottom: 1px solid #efefef;
+   		padding-bottom: 0.2rem;
+   }
+   .main_6 ul li a {
+   		display: block;
+   		width: 1.866667rem;
+   		line-height: 0.533333rem;
+   		background-color: #ffffff;
+		border-radius: 10px;
+		border: solid 1px #999999;
+		font-size: 0.24rem;
+		color: #666666;
+		margin: 0.2rem auto;
    }
 }
 

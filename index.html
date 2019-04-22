@@ -20,12 +20,12 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
     		<div class="headert cf">
 				<h1><a href="#"><img src="img/logo.png" alt=""></a></h1>
 				<ul class="cf">
-					<li><a href="#">产品展示</a></li>
-					<li><a href="#">关于我们</a></li>
-					<li><a href="#">客户案例</a></li>
+					<li><a href="productDisplay.html">产品展示</a></li>
+					<li><a href="aboutUs.html">关于我们</a></li>
+					<li><a href="clientCase.html">客户案例</a></li>
 					<li><a href="#">产品代理</a></li>
 					<li>
-						<a href="#">新闻资讯</a>
+						<a href="news.html">新闻资讯</a>
 						<div>
 							<em></em>
 							<i><a href="#">公司新闻</a></i>
@@ -33,10 +33,24 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
 							<i><a href="#">行业动态</a></i>
 						</div>
 					</li>
-					<li><a href="#">联系我们</a></li>
+					<li><a href="contactUs.html">联系我们</a></li>
 				</ul>
 				<p><img style="margin-top:3px;" src="img/p1.png" alt="">18670019960</p>
 				<h6><a href="#">关注微信</a></h6>
+				<h5>
+					<a href="#"><img src="img/nav.png" alt=""></a>
+					<div class="mulu">
+						<img class="mulu_a" style="margin:0.6rem 0 0 0.6rem;" src="img/mu_03.png" alt="">
+						<ol>
+							<li><a href="#">客户案例</a></li>
+							<li><a href="#">产品展示</a></li>
+							<li><a href="#">新闻资讯</a></li>
+							<li><a href="#">关于我们</a></li>
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">在线留言</a></li>
+						</ol>
+					</div>
+				</h5>
 			</div>
     	</header>
     	<!-- banner -->
@@ -44,18 +58,15 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
     		<div class="swiper-container  swiper_1">
 			  <div class="swiper-wrapper">
 			    <div class="swiper-slide">
-				     <a href="#">
-				     	<img src="img/banners_01.jpg" alt="">
+				     <a style="background:url(img/banners_01.jpg)center center" href="#">
 				     </a>
 			    </div>
 			    <div class="swiper-slide">
-					<a href="#">
-				     	<img src="img/banners_02.jpg" alt="">
+					<a style="background:url(img/banners_02.jpg)center center" href="#">
 				     </a>
 			    </div>
 			    <div class="swiper-slide">
-					<a href="#">
-				     	<img src="img/banners_03.jpg" alt="">
+					<a style="background:url(img/banners_03.jpg)center center" href="#">
 				     </a>
 			    </div>
 			  </div>
@@ -82,7 +93,7 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
 			</ul>
 		</div>
 		<div class="main_2 cf">
-			<h6>不用仰望别人 自己亦是风景</h6>
+			<h6><a href="#">不用仰望别人 自己亦是风景</a></h6>
 			<div class="main_w">
 				<ul>
 					<li><img src="img/p4.jpg" alt=""></li>
@@ -93,7 +104,7 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
 					<li><img src="img/p7.jpg" alt=""></li>
 				</ul>
 			</div>
-			<ol>
+			<ol class="cf">
 				<li><img src="img/p4.jpg" alt=""></li>
 				<li><img src="img/p5.jpg" alt=""></li>
 			</ol>
@@ -105,7 +116,7 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
 				<li class="l2">
 					<h6>公<i>司简</i>介</h6>
 					<p>湖南宏康生物科技有限公司拥有良好的经验环境和专业的营养师团队及营销中心，公司自成立以来，一直坚持以产品质量为核心，以客户需求为中心，以市场为导向，以专业专注的态度服务终端一线市场，为客户提供营销，促销，慢性疾病营养解决方案等一站式服务。</p>
-					<p>宏康生物科技将在每一个城市或区域均设立客户服务中心，为消费者提供准确而个性化的健康咨询和健康规划，帮助消费者寻求以营养的方式改善及提高身体机能，从而提升生活的品质。</p>
+					<p class="l2p">宏康生物科技将在每一个城市或区域均设立客户服务中心，为消费者提供准确而个性化的健康咨询和健康规划，帮助消费者寻求以营养的方式改善及提高身体机能，从而提升生活的品质。</p>
 				</li>
 				<li><a href="#"><img src="img/p10.jpg" alt=""></a></li>
 				<li class="l1">
@@ -189,13 +200,15 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
 		<footer>
 			<div class="footer">
 				<h1><a href="#"><img style="margin-top:4px;" src="img/logo_d.png" alt=""></a></h1>
-				<div class="footer_d">
+				<div class="footer_d cf">
 					<img src="img/p14.png" alt="">
 					<p>服务热线<b>18670019960</b></p>
 				</div>
 				<div class="footer_r">
-					<a href="#"><img src="img/wechat.png" alt=""></a>
-					<a href="#"><img src="img/qq.png" alt=""></a>
+
+					<img class="wechat" src="img/wechat.png" alt="">
+					<img class="qrcode" src="img/qrcode.jpg" alt="">
+					<a href="#"><img class="qq" src="img/qq.png" alt=""></a>
 				</div>
 			</div>
 			<h2>备案号：湘ICP 0123456789     技术支持：<a href="http://www.zhitouweilai.com/">智投未来</a></h2>
@@ -222,6 +235,9 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
 						<img src="img/p17.png" alt="">
 						<p>微信咨询</p>
 					</a>
+					<div style="top:-30px;left:-250px;">
+						<img style="width:215px;" src="img/qrcode.jpg" alt="">
+					</div>
 				</li>
 				<li style="border-radius: 0 0 8px 8px ;">
 					<a id="to-top" href="#">
@@ -238,5 +254,18 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
     <script src="js/rem.js"></script>
     <script src="js/jquery.SuperSlide.2.1.js"></script>
     <script src="js/common.js"></script>
+    <script>
+    	var mySwiper = new Swiper('.swiper_1', {
+			pagination: {
+			    el: '.swiper_1 .swiper-pagination',
+			    clickable :true,
+			},
+			navigation: {
+			  nextEl: '.swiper_1 .swiper-button-next',
+			  prevEl: '.swiper_1 .swiper-button-prev',
+			},
+		});
+		$(".main_w").slide({mainCell:"ul",autoPlay:true,effect:"leftMarquee",vis:5,interTime:1,});
+    </script>
     </body>
 </html>
