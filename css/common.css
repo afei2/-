@@ -145,9 +145,21 @@ a * { *cursor: pointer }
 	.banner{
 		height: 600px;
 	}
-	.banner img{
-		width: 100%;
-	}
+	.banner01{
+   		background: url(../img/banners_01.jpg)center center;
+	   }
+	.banner02{
+   		background: url(../img/banners_02.jpg)center center;
+    }
+   	.banner03{
+   		background: url(../img/banners_03.jpg)center center;
+   	}
+   	.banner04{
+   		background: url(../img/banners_04.jpg)center center;
+   	}
+   	.banner05{
+   		background: url(../img/banners_02.jpg)center center;
+   	}
 	.main_1{
 		height: 906px;
 		background: url(../img/bg01.jpg) center center no-repeat;
@@ -428,6 +440,7 @@ a * { *cursor: pointer }
 		position: fixed;
 		right: 0;
 		top: 300px;
+		z-index: 999;
 	}
 	.scroll ul li{
 		background: #e46100;
@@ -449,7 +462,6 @@ a * { *cursor: pointer }
 		position: absolute;
 		left: -120px;
 		top: 20px;
-		background: #fff;
 		height: 30px;
 		width: 120px;
 		padding-top: 20px;
@@ -578,7 +590,7 @@ a * { *cursor: pointer }
 	.main_7 ul {
 		width: 1200px;
 		margin: 0 auto;
-		margin-bottom:60px;
+		padding-bottom:60px;
 	}
 	.main_7 ul li{
 		width: 360px;
@@ -586,6 +598,9 @@ a * { *cursor: pointer }
 		background-color: #ffffff;
 		float: left;
 		margin-right:60px;
+	}
+	.lmt {
+		margin-top: 75px;
 	}
 	.main_7 ul li img {
 		margin: 10px;
@@ -1019,10 +1034,11 @@ a * { *cursor: pointer }
 	}
 	.headert h1{
 		float: left;
-		/*margin-left: 0.333333rem;*/
+		margin-left: 5%;
 	}
    .headert h1 img{
-   		width: 2.426667rem;
+   		width: 1.933333rem;
+   		margin-top: 0.133333rem;
    }
    .headert ul{
    		display: none;
@@ -1074,7 +1090,7 @@ a * { *cursor: pointer }
     }
 	.mulu ol li a {
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 0.6rem;
         color: #333;
         padding-top: 0.05rem;
         margin-bottom: 0.3rem;
@@ -1094,10 +1110,29 @@ a * { *cursor: pointer }
 	}
    .banner {
    		width: 100%;
+   		height: 4.0rem;
    }
-   .banner img {
-   		width: 100%
+   .banner a {
+   		display: block;
+   		width: 100%;
+   		height: 4.0rem;
+   		background-size:cover;
    }
+   .banner01{
+   		background: url(../img/banners_01.jpg)center center;
+   }
+   .banner02{
+   		background: url(../img/banners_02.jpg)center center;
+   }
+   .banner03{
+   		background: url(../img/banners_03.jpg)center center;
+   }
+   .banner04{
+   		background: url(../img/banners_04.jpg)center center;
+   	}
+   	.banner05{
+   		background: url(../img/banners_02.jpg)center center;
+   	}
    .swiper_1 i{
    		display: none;
    }
@@ -1363,6 +1398,8 @@ a * { *cursor: pointer }
    }
    .qywh i {
    	color: #666;
+   	display: block;
+   	line-height: 0.42rem;
    }
    .main_8 .content{
    		margin: 2.5%;
@@ -1385,7 +1422,8 @@ a * { *cursor: pointer }
    	margin-top: 0.666667rem;
    }
    .main_8 .content ol li img{
-	width: 100%;
+		width: 100%;
+		margin: 0.2rem 0;
    }
    .main_7 ul{
    		margin:0 2.5%;
@@ -1404,6 +1442,9 @@ a * { *cursor: pointer }
    		line-height: 0.32rem;
    		padding: 0.133333rem 0;
    		border-top: 1px solid #e0dfdf;
+   }
+   .main_7 ul li {
+   		margin: 0.266667rem 0;
    }
    .main_9 ul {
    		display: none;
